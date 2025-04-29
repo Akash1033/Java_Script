@@ -28,6 +28,31 @@ const obj2 = {
 }
 
 // const obj3  = { obj1 , obj2}
-const obj3 = Object.assign( obj1,obj2)
-console.log()
+// const obj3 = Object.assign( {},obj1,obj2)
+
+const obj3 = { ...obj1, ...obj2}
+console.log(obj1)
 console.log(obj3)
+
+
+const User = [
+    {
+        id:"akash123"
+    },
+    {
+        id:"akash123"
+    },
+    {
+        id:"akash123"
+    }
+]
+
+User[1].id
+console.log(tinderUser);
+
+
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
+
+console.log(tinderUser.hasOwnProperty("isLoggedIn"));
